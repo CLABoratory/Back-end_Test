@@ -1,5 +1,6 @@
-import { Calculator } from "./calculator.interface";
+import { Calculator } from "../interfaces";
 import { SqrtAlgorithm } from "./sqrt-algorythm.a-class";
+import {SquareRootType} from "@/common/types";
 
 export class SqrtCalculator implements Calculator {
   private result: number = 0;
@@ -11,8 +12,10 @@ export class SqrtCalculator implements Calculator {
     this.algorithm.setTarget(this.number);
   }
 
-  calculate(): number {
+  calculate(): SquareRootType {
     this.result = this.algorithm.process();
-    return this.result;
+    return {
+      result: this.result
+    };
   }
 }
