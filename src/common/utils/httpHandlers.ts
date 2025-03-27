@@ -2,9 +2,9 @@ import type { NextFunction, Request, Response } from "express";
 import { StatusCodes } from "http-status-codes";
 import type { ZodError, ZodSchema } from "zod";
 
-import { ServiceResponse } from "@/common/models/serviceResponse";
+import { ServiceResponse } from "@/common/utils/serviceResponse";
 
-export const handleServiceResponse = (serviceResponse: ServiceResponse<unknown>, response: Response) => {
+export const handleServiceResponse = <T>(serviceResponse: ServiceResponse<T>, response: Response) => {
 	return response.status(serviceResponse.statusCode).send(serviceResponse);
 };
 
