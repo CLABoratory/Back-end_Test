@@ -1,4 +1,4 @@
-import { SqrtAlgorithm } from '../sqrt-algorythm.a-class';
+import { SqrtAlgorithm } from '../service';
 import { describe, it, expect, beforeEach } from 'vitest';
 
 // Concrete implementation of SqrtAlgorithm for testing
