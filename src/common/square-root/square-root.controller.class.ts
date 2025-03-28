@@ -9,7 +9,7 @@ import { Message } from "./enums";
 
 export class SquareRootController {
 
-    static calculation(req: RequestBodyType<Target>, res: Response) {
+    calculation(req: RequestBodyType<Target>, res: Response) {
         const { targetNumber } = req.body;
         const cache = new Map<number, SquareRootType>();
         const statusCode = StatusCodes.CREATED;

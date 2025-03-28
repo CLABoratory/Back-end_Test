@@ -4,7 +4,8 @@ import { validateRequest } from "@/common/middleware/validationRequest";
 
 
 const squareRoot = Router();
+const squareRootController = new SquareRootController();
 
-squareRoot.post('/calculate', validateRequest, SquareRootController.calculation)
+squareRoot.post('/calculate', validateRequest, squareRootController.calculation)
 
 export default squareRoot
