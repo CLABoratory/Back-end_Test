@@ -1,4 +1,4 @@
-import { Algorithm } from "./algorythm.interface";
+import { Algorithm } from "../interfaces";
 
 export abstract class SqrtAlgorithm implements Algorithm {
   protected number: number = 0;
