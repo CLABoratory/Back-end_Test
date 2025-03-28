@@ -1,17 +1,18 @@
-import { NewtonRaphsonAlgorithm, SqrtCalculator } from "./service";
-import { handleServiceResponse } from "@/common/utils/httpHandlers";
-import { ServiceResponse } from "@/common/utils/serviceResponse";
-import { StatusCodes } from "http-status-codes";
-import type { RequestBodyType } from "@/common/types/request-body.type";
-import type { Response } from "express";
+import {NewtonRaphsonAlgorithm, SqrtCalculator} from "./service";
+import {handleServiceResponse} from "@/common/utils/httpHandlers";
+import {ServiceResponse} from "@/common/utils/serviceResponse";
+import {StatusCodes} from "http-status-codes";
+import type {RequestBodyType} from "@/common/types/request-body.type";
+import type {Response} from "express";
 import type {SquareRootType, Target} from "@/common/types";
-import { Message } from "./enums";
+import {Message} from "./enums";
+import {cache} from "@/common/utils/cache";
+
 
 export class SquareRootController {
 
     calculation(req: RequestBodyType<Target>, res: Response) {
         const { targetNumber } = req.body;
-        const cache = new Map<number, SquareRootType>();
         const statusCode = StatusCodes.CREATED;
         let response: ServiceResponse<SquareRootType>;
 
