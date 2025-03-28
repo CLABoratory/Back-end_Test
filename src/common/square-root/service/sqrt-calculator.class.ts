@@ -1,9 +1,9 @@
-import { Calculator } from "../interfaces";
-import { SqrtAlgorithm } from "./sqrt-algorythm.a-class";
-import {SquareRootType} from "@/common/types";
+import type { Calculator } from "../interfaces";
+import type { SqrtAlgorithm } from "./sqrt-algorythm.a-class";
+import type {SquareRootType} from "@/common/types";
 
 export class SqrtCalculator implements Calculator {
-  private result: number = 0;
+  private result = 0;
 
   constructor(
     private readonly number: number,

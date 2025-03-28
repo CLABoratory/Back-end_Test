@@ -2,9 +2,9 @@ import { NewtonRaphsonAlgorithm, SqrtCalculator } from "./service";
 import { handleServiceResponse } from "@/common/utils/httpHandlers";
 import { ServiceResponse } from "@/common/utils/serviceResponse";
 import { StatusCodes } from "http-status-codes";
-import { RequestBodyType } from "@/common/types/request-body.type";
-import { Response } from "express";
-import {SquareRootType, Target} from "@/common/types";
+import type { RequestBodyType } from "@/common/types/request-body.type";
+import type { Response } from "express";
+import type {SquareRootType, Target} from "@/common/types";
 import { Message } from "./enums";
 
 export class SquareRootController {

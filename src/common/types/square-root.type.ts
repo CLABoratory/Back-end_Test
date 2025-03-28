@@ -6,4 +6,4 @@ type Target = {
     targetNumber : number
 }
 
-export { Target, SquareRootType }
+export type { Target, SquareRootType }

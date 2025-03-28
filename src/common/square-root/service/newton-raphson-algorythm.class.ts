@@ -7,7 +7,7 @@ import { SqrtAlgorithm } from "./sqrt-algorythm.a-class";
 // 4. Return the guess
 
 export class NewtonRaphsonAlgorithm extends SqrtAlgorithm {
-    private guess : number = 0;
+    private guess  = 0;
 
     protected approximateGuess(): number {
         if(this.guess === 0){
