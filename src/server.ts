@@ -27,7 +27,7 @@ app.use(requestLogger);
 
 // Routes
 // Add routes here...
-app.use('/api', router);
+app.use(router);
 
 // Error handlers
 app.use(errorHandler());
