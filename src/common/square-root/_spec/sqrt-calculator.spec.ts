@@ -1,5 +1,4 @@
-import { SqrtCalculator } from '../sqrt-calculator.class';
-import { SqrtAlgorithm } from '../sqrt-algorythm.a-class';
+import { SqrtCalculator, SqrtAlgorithm  } from '../service';
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 
 // Mock implementation of SqrtAlgorithm for testing

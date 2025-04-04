@@ -1,10 +1,10 @@
-import { Algorithm } from "./algorythm.interface";
+import type { Algorithm } from "../interfaces";
 
 export abstract class SqrtAlgorithm implements Algorithm {
-  protected number: number = 0;
-  protected result: number = 0;
+  protected number = 0;
+  protected result = 0;
   
-  protected iteration: number = 0;
+  protected iteration = 0;
   protected readonly tolerance: number = 1e-7;
   protected readonly iterationLimit: number = 1000;
 

@@ -1,4 +1,4 @@
-import { NewtonRaphsonAlgorithm } from '../newton-raphson-algorythm.class';
+import { NewtonRaphsonAlgorithm } from '../service';
 import { describe, it, expect, beforeEach } from 'vitest';
 
 describe('NewtonRaphsonAlgorithm', () => {
